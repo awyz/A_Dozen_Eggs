@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+<!--        <link rel="stylesheet" href="thecss.css">
+-->
+        <title>A Dozen Eggs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+<!-- menu -->
+<div class="whitebg">
+  <div class="compact menu">
+    <div class="ui container"><a class="item">
+
+      <div class="ui text borderless bottom menu">
+        <div class="ui container">
+            <h1 class="ui centered aligned icon header">A DOZEN EGGS </h1>
+        </div>
+      </div>
+    </a></div>
+    </a>
+  </div>
+  </div>
+
+<div class ="ui divider"></div>
+<div class="ui four item text menu">
+  <a href="/" class="item"><div class="blacktxt">HOME</div></a>
+  <a href="/add" class="item"><div class="blacktxt">ADD ITEMS</div></a>
+  <div class="ui simple dropdown item">
+    <a href="/inventory" class="item"><div class="text"><div class="blacktxt">VIEW INVENTORY</div></div></a>
+  </div>
+  <a href="/calendar" class="item"><div class="blacktxt">VIEW STATISTICS</div></a>
+</div>
+<div class ="ui divider"></div>
+   
+<div class='ui centered grid'>
+    <h3>ADD TO INVENTORY</h3>
+</div>
+<p>&nbsp</p>
+
+<div class="ui centered grid">
+<form class="ui form" name = "search" action="/add" method='POST'>
+  <label>
+    Name
+  </label>
+  <input type=text id='name' name='name' />
+  <label>
+    Amount
+  </label>
+  <input type=text id='amount' name='amount' />
+  <br />
+  <label>
+    Price
+  </label>
+  <input type=text id='price' name='price' />
+  <label>
+    Type
+  </label>
+  <select name="type">
+    <option value="Bread">Baked Goods</option>
+    <option value="Can">Canned Goods</option>
+    <option value="Drink">Beverages</option>
+    <option value="Dry">Dry Goods</option>
+    <option value="Frozen">Frozen Foods</option>
+    <option value="Meat">Meats/Proteins</option>
+    <option value="Produce">Produce</option>
+    <option value="Dairy">Dairy</option>
+  </select>
+  &nbsp
+  <label>Month Purchased</label>
+  <select name="month1">
+    <option value="Jan">January</option>
+    <option value="Feb">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="Aug">August</option>
+    <option value="Sep">September</option>
+    <option value="Oct">October</option>
+    <option value="Nov">November</option>
+    <option value="Dec">December</option>
+  </select>
+  <!--<input type=text id='type' name='type' /> -->
+  <br />
+  <input type=submit value=Submit>
+</form>
+</div>
+
+
+<!-- fill in, dropdown, number -->
+<!--
+<div class='ui centered grid'>
+    <form class="ui form">
+  <div class="field">
+    <label>NAME</label>
+    <input type="text" name="name1" placeholder="Name">
+  </div>
+        
+        
+<div class="field">
+      <label>Type</label>
+      <select class="form-control ui fluid dropdown" id="type1" name="type">
+        <option value="bread">Bread</option>
+        <option value="can">Canned Goods</option>
+        <option value="dairy">Dairy</option>
+        <option value="drink">Drinks</option>
+        <option value="dry">Dry Goods</option>
+        <option value="frozen">Frozen foods</option>
+        <option value="meat">Meat</option>        
+        <option value="produce">Produce</option> 
+      </select>
+    </div>
+        
+   </select>
+  <div class="field">
+    <label>AMOUNT</label>
+    <input type="text" name="amount1" placeholder="Amount">
+  </div>
+  <div class="field">
+    <label>PRICE</label>
+    <input type="text" name="price1" placeholder="Price">
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+</div>
+
+<!--
+<form method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+-->
+
+
+    </body>
+</html>
+<!-- update -->

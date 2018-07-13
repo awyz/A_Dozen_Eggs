@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <link rel="stylesheet" href="thecss.css">
+  <title>A Dozen Eggs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- menu -->
+<div class="whitebg">
+  <div class="compact menu">
+    <div class="ui container"><a class="item">
+
+      <div class="ui text borderless bottom menu">
+        <div class="ui container">
+          <h1 class="ui centered aligned icon header">A DOZEN EGGS </h1>
+        </div>
+      </div>
+    </div>
+    </a></div>
+</div>
+
+<div class ="ui divider"></div>
+<div class="ui four item text menu">
+  <a href="/" class="item"><div class="blacktxt">HOME</div></a>
+  <a href="/add" class="item"><div class="blacktxt">ADD ITEMS</div></a>
+  <div class="ui simple dropdown item">
+    <a href="/inventory" class="item"><div class="text"><div class="blacktxt">VIEW INVENTORY</div></div></a>
+  </div>
+  <a href="/calendar" class="item"><div class="blacktxt">VIEW STATISTICS</div></a>
+</div>
+<div class ="ui divider"></div>
+
+
+<div class="ui centered container">
+  <table border="1" class="ui celled table">
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Price</th>
+      <th>Month</th>
+      <th></th>
+    </tr>
+    {% for o in data %}
+    <tr>
+      <td>{{ o[1] }}</td>
+      <td>{{ o[2]}}</td>
+      <td>{{ o[3] }}</td>
+      <td>{{o[4]}}</td>
+      <td>{{o[5]}}</td>
+                      <td><a href="edit_entry/{{o[0]}}" class="btn btn-default pull-right">Edit</a></td>
+      <td><a href="delete/{{o[0]}}" class="btn btn-default pull-right">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+</body>
+</html>

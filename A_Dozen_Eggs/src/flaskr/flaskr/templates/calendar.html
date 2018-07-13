@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+        <link rel="stylesheet" href="thecss.css">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+        <title>A Dozen Eggs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+    
+
+<div class="whitebg">
+  <div class="compact menu">
+    <div class="ui container"><a class="item">
+
+      <div class="ui text borderless bottom menu">
+        <div class="ui container">
+            <h1 class="ui centered aligned icon header">A DOZEN EGGS </h1>
+        </div>
+      </div>
+      </div>
+    </a></div>
+  </div>
+
+<div class ="ui divider"></div>
+<div class="ui four item text menu">
+  <a href="/" class="item"><div class="blacktxt">HOME</div></a>
+  <a href="/add" class="item"><div class="blacktxt">ADD ITEMS</div></a>
+  <div class="ui simple dropdown item">
+    <a href="/inventory" class="item"><div class="text"><div class="blacktxt">VIEW INVENTORY</div></div></a>
+  </div>
+  <a href="/calendar" class="item"><div class="blacktxt">VIEW STATISTICS</div></a>
+</div>
+<div class ="ui divider"></div>
+  
+<div class="home">
+<!-- Dropdown menu -->
+<div class="ui centered container">
+<div class="ui four cards">
+  <a class="red card">
+      <div class="center aligned header"><h1>January</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ jan1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ jan2[0] }}</p></div>
+  </a>
+  <a class="orange card">
+      <div class="center aligned header"><h1>February</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ feb1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ feb2[0] }}</p></div>
+  </a>
+  <a class="yellow card">
+      <div class="center aligned header"><h1>March</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ march1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ march2[0] }}</p></div>
+  </a>
+  <a class="olive card">
+      <div class="center aligned header"><h1>April</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ april1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ april2[0] }}</p></div>
+  </a>
+  <a class="green card">
+      <div class="center aligned header"><h1>May</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ may1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ may2[0] }}</p></div>
+  </a>
+  <a class="teal card">
+      <div class="center aligned header"><h1>June</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ june1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ june2[0] }}</p></div>
+  </a>
+  <a class="blue card">
+
+      <div class="center aligned header"><h1>July</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ july1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ july2[0] }}</p></div>
+  </a>
+  <a class="violet card">
+      <div class="center aligned header"><h1>August</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ aug1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ aug2[0] }}</p></div>
+  </a>
+  <a class="purple card">
+      <div class="center aligned header"><h1>September</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ sep1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ sep2[0] }}</p></div>
+  </a>
+  <a class="pink card">
+      <div class="center aligned header"><h1>October</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ oct1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ oct2[0] }}</p></div>
+  </a>
+  <a class="brown card">
+      <div class="center aligned header"><h1>November</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ nov1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ nov2[0] }}</p></div>
+  </a>
+  <a class="grey card">
+      <div class="center aligned header"><h1>December</h1> </div>
+      <div class="center aligned description"><p>Amount spent: ${{ dec1[0] }}</p></div>
+      <div class="center aligned description"><p>Favorite food category: {{ dec2[0] }}</p></div>
+  </a>
+</div>
+</div>
+</div>
+<!-- test --
+<div class='ui centered grid'>
+    <form class="ui form">
+   <select class="ui fluid dropdown">
+        <option value="">Month</option>
+        <option value="">January</option>
+        <option value="">February</option>
+        <option value="">March</option>
+        <option value="">April</option>
+        <option value="">May</option>
+        <option value="">June</option>
+        <option value="">July</option>        
+        <option value="">August</option>      
+        <option value="">September</option>      
+        <option value="">October</option>      
+        <option value="">November</option>      
+        <option value="">December</option>  
+   </select>
+        <p></p>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+</div>
+<!-- test -->
+
+
+
+    </body>
+</html>
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <!--        <link rel="stylesheet" href="thecss.css">
+  -->
+  <title>A Dozen Eggs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- menu -->
+<div class="whitebg">
+  <div class="compact menu">
+    <div class="ui container"><a class="item">
+
+      <div class="ui text borderless bottom menu">
+        <div class="ui container">
+          <h1 class="ui centered aligned icon header">A DOZEN EGGS </h1>
+        </div>
+      </div>
+    </a></div>
+    </a>
+  </div>
+</div>
+
+<div class ="ui divider"></div>
+<div class="ui four item text menu">
+  <a href="/" class="item"><div class="blacktxt">HOME</div></a>
+  <a href="/add" class="item"><div class="blacktxt">ADD ITEMS</div></a>
+  <div class="ui simple dropdown item">
+    <a href="/inventory" class="item"><div class="text"><div class="blacktxt">VIEW INVENTORY</div></div></a>
+  </div>
+  <a href="/calendar" class="item"><div class="blacktxt">VIEW STATISTICS</div></a>
+</div>
+<div class ="ui divider"></div>
+
+<!-- Forms -->
+<div class="ui centered grid">
+  <form class="ui form" name = "search" action="/edit_entry/{{ id }}" method='POST'>
+    <label>
+      Name
+    </label>
+    <input type=text id='name' name='name' placeholder=" {{name2[0]}}"/>
+    <label>
+      Amount
+    </label>
+    <input type=text id='amount' name='amount' placeholder="{{ amount2[0] }}"/>
+    <br />
+    <label>
+      Price
+    </label>
+    <input type=text id='price' name='price' placeholder="{{ price2[0] }}"/>
+    <label>
+      Type
+    </label>
+    <select name="type">
+      <option value="{{ type2[0] }}"> {{ type2[0] }}</option>
+      <option value="Bread">Baked Goods</option>
+      <option value="Can">Canned Goods</option>
+      <option value="Drink">Beverages</option>
+      <option value="Dry">Dry Goods</option>
+      <option value="Frozen">Frozen Foods</option>
+      <option value="Meat">Meats/Proteins</option>
+      <option value="Produce">Produce</option>
+      <option value="Dairy">Dairy</option>
+    </select>
+    &nbsp
+    <label>Month Purchased</label>
+    <select name="month1">
+      <option value="{{ data[0] }}">{{ data[0] }}</option>
+      <option value="Jan">January</option>
+      <option value="Feb">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="Aug">August</option>
+      <option value="Sep">September</option>
+      <option value="Oct">October</option>
+      <option value="Nov">November</option>
+      <option value="Dec">December</option>
+    </select>
+    <!--<input type=text id='type' name='type' /> -->
+    <br />
+    <input type=submit value=Submit>
+  </form>
+</div>
+
+
+
+</body>
+</html>
